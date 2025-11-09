@@ -1,0 +1,29 @@
+{
+  "info": {
+    "_postman_id": "ez-labs-contact-collection",
+    "name": "EZ Labs - Contact API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Contact Us - POST",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Test user\",\n  \"email\": \"testuser@gmail.com\",\n  \"phone\": \"908765498\",\n  \"message\": \"This is a message\"\n}"
+        },
+        "url": {
+          "raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+          "protocol": "https",
+          "host": ["vernanbackend", "ezlab", "in"],
+          "path": ["api", "contact-us", ""]
+        }
+      },
+      "response": []
+    }
+  ]
+}
